@@ -1,34 +1,86 @@
 <html>
     <style>
+        body
+        {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
         header{
-            background-color: cadetblue;
+            background-color: cornflowerblue;
+            color: antiquewhite;
+            margin: 0 ;
+            padding: 10px 0px;
+            text-align: center;
+            
+        }
+        nav
+        {
+            background-color: darkgrey;
+            text-align: center; 
+            padding: 12px 0;
+        }
+        nav a
+        {
+            color: antiquewhite;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 600;
+            font-size: 1.1rem;
+
+        }
+        #About
+        {
+            color: grey;
+        }
+        #Speakers
+        {
+            color: grey;
+        }
+        #Contact
+        {
+            color: grey;
         }
     </style>
     <body>
         <header>
-            <h2>
+            <h1>
                 Welcome to Verticraze
-            </h2>
+            </h1>
         </header>
+
        <nav>
-            <a href="About">About</a>
-            <a href="Speakers">Speakers</a>
-            <a href="Contact">Contact</a>
+            <a href="#About">About</a>
+            <a href="#Speakers">Speakers</a>
+            <a href="#Contact">Contact</a>
        </nav> 
-       <section>
+       
+       <section id="About">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis dolor ac ultricies rhoncus. Vestibulum vel libero auctor, placerat eros sed, egestas ex. Vivamus luctus elit sem, in cursus eros facilisis dignissim. Donec ut mi porttitor, auctor elit non, pretium elit. Nam urna augue, pretium id accumsan in, feugiat quis est. Donec tincidunt sapien non diam egestas facilisis. Integer lacus nulla, vestibulum feugiat euismod eget, feugiat id nunc. Duis semper sem euismod orci condimentum, vel consectetur nisl tincidunt. Curabitur varius, libero quis maximus auctor, odio felis gravida neque, in semper lacus metus et purus. Donec feugiat eu ipsum quis dignissim. Ut sem risus, venenatis eget magna eget, tincidunt vestibulum tellus. In interdum urna non convallis tristique. Vivamus molestie ut mauris ornare viverra. Aliquam efficitur quis felis vel posuere. 
 
         </p>
        </section>
-       <section>
-        <p>
-            Pellentesque eget nisl vitae dui viverra maximus eu eu eros. Mauris malesuada volutpat massa, non commodo nulla rhoncus venenatis. Donec sit amet risus sit amet augue dictum finibus. Quisque ac eros tellus. Nam sit amet leo interdum, blandit justo a, tincidunt sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas leo eros, viverra ut ante accumsan, scelerisque fermentum metus. Phasellus porttitor sapien in ligula congue, vitae pretium nisl laoreet. Cras hendrerit consequat purus, non bibendum lectus vulputate vitae. Duis ullamcorper rhoncus suscipit. Etiam ultrices vehicula enim, nec aliquet orci eleifend facilisis. 
-        </p>
+       
+       <section id="Speakers">
+        <ul>
+            <li><strong>Hardik</strong></li>
+            <li><strong>Aryan</strong></li>
+            <li><strong>Shivika</strong></li>
+        </ul>
        </section>
-       <section>
+       
+       <section id="Contact">
         <p>
             Integer condimentum iaculis ligula, in fringilla est placerat eu. In tristique ultricies accumsan. Integer sodales orci ante, sit amet lobortis nisl sagittis id. Ut porttitor ipsum et congue cursus. Suspendisse placerat sapien et felis congue, eu sodales tortor efficitur. Proin iaculis sollicitudin augue. Phasellus a orci at turpis porta varius. Ut ac tortor quis felis varius efficitur non vel purus. Ut ut condimentum leo. Nulla ornare ornare purus vel fermentum. 
         </p>
+        <form>
+            <label for="name">Name</label><br>
+            <input type="text" id ="name" name="name"><br><br>
+            <label for="email">Email</label><br>
+            <input type="email" id ="email" name="email"><br><br>
+            <label for="message">Message</label><br>
+            <textarea name="message" id="message" rows="3"></textarea><br><br>
+            <button type="submit">Send</button>
+        </form>
        </section>
+    
     </body>
 </html>
