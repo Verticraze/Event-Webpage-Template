@@ -1,45 +1,105 @@
 <html>
     <style>
+        
         body
         {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.2;
         }
-        header{
+        
+        header
+        {
             background-color: cornflowerblue;
             color: antiquewhite;
-            margin: 0 ;
             padding: 10px 0px;
             text-align: center;
-            
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            font-size: larger;
         }
+        
         nav
         {
             background-color: darkgrey;
             text-align: center; 
             padding: 12px 0;
         }
+        
         nav a
         {
             color: antiquewhite;
             text-decoration: none;
             margin: 0 20px;
             font-weight: 600;
-            font-size: 1.1rem;
+            font-size: 1.4rem;
+        }
+        nav :hover
+        {
+            color: cornflowerblue;
+            text-decoration: underline;
+        }
+        section h1
+        {
+            font-size: 2.5rem;
+            color: cornflowerblue;
+        }
+        section
+        {
+            padding: 5px;
+            margin: 20px auto;
+            max-width: 1600px;
+        }
+        ul
+        {
+            list-style: none;
+        }
+        ul li strong
+        {
+            color: cornflowerblue;
+            font-size: 1.2rem;
+        }
 
-        }
-        #About
+        form
         {
-            color: grey;
+            max-width: 850px;
+            margin: 5px ;
         }
-        #Speakers
+
+        form label
         {
-            color: grey;
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: cornflowerblue;
         }
-        #Contact
+        form input,form textarea,form button
         {
-            color: grey;
+            width: 200%;
+            padding: 14px;
+            margin-bottom: 18px;
+        
+        }
+        form button
+        {
+            background-color: cornflowerblue;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border:none;
+            cursor:pointer;
+            transition: background-color 0.3s ease;
+        }
+        form button:hover
+        {
+            background-color: #0056b3;
+        }
+        form button:active
+        {
+            background-color: #0056b3;
         }
     </style>
+    
     <body>
         <header>
             <h1>
@@ -54,33 +114,43 @@
        </nav> 
        
        <section id="About">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis dolor ac ultricies rhoncus. Vestibulum vel libero auctor, placerat eros sed, egestas ex. Vivamus luctus elit sem, in cursus eros facilisis dignissim. Donec ut mi porttitor, auctor elit non, pretium elit. Nam urna augue, pretium id accumsan in, feugiat quis est. Donec tincidunt sapien non diam egestas facilisis. Integer lacus nulla, vestibulum feugiat euismod eget, feugiat id nunc. Duis semper sem euismod orci condimentum, vel consectetur nisl tincidunt. Curabitur varius, libero quis maximus auctor, odio felis gravida neque, in semper lacus metus et purus. Donec feugiat eu ipsum quis dignissim. Ut sem risus, venenatis eget magna eget, tincidunt vestibulum tellus. In interdum urna non convallis tristique. Vivamus molestie ut mauris ornare viverra. Aliquam efficitur quis felis vel posuere. 
-
+        <h1>About us</h1>
+        
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis dolor ac ultricies rhoncus. Vestibulum vel libero auctor, placerat eros sed, egestas ex. Vivamus luctus elit sem, in cursus eros facilisis dignissim. Donec ut mi porttitor, auctor elit non, pretium elit. Nam urna augue, pretium id accumsan in, feugiat quis est. Donec tincidunt sapien non diam egestas facilisis. Integer lacus nulla, vestibulum feugiat euismod eget, feugiat id nunc. Duis semper sem euismod orci condimentum, vel consectetur nisl tincidunt. Curabitur varius, libero quis maximus auctor, odio felis gravida neque, in semper lacus metus et purus. Donec feugiat eu ipsum quis dignissim. Ut sem risus, venenatis eget magna eget, tincidunt vestibulum tellus. In interdum urna non convallis tristique. Vivamus molestie ut mauris ornare viverra. Aliquam efficitur quis felis vel posuere. 
         </p>
        </section>
        
        <section id="Speakers">
+        <h1>Speakers</h1>
+      
         <ul>
-            <li><strong>Speaker1</strong></li>
-            <li><strong>Speaker2</strong></li>
-            <li><strong>Speaker3</strong></li>
+            <li><strong>Speaker 1:</strong> Phasellus a orci at turpis porta varius. Ut ac tortor quis felis varius efficitur non vel purus. </li><br>
+            <li><strong>Speaker 2:</strong> Ut ut condimentum leo. Nulla ornare ornare purus vel fermentum. </li><br>
+            <li><strong>Speaker 3:</strong> Ut porttitor ipsum et congue cursus.</li> 
         </ul>
-       </section>
+       
+        </section>
        
        <section id="Contact">
+        <h1>Contact</h1>
+       
         <p>
             Integer condimentum iaculis ligula, in fringilla est placerat eu. In tristique ultricies accumsan. Integer sodales orci ante, sit amet lobortis nisl sagittis id. Ut porttitor ipsum et congue cursus. Suspendisse placerat sapien et felis congue, eu sodales tortor efficitur. Proin iaculis sollicitudin augue. Phasellus a orci at turpis porta varius. Ut ac tortor quis felis varius efficitur non vel purus. Ut ut condimentum leo. Nulla ornare ornare purus vel fermentum. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis dolor ac ultricies rhoncus. Vestibulum vel libero auctor, placerat eros sed, egestas ex. Vivamus luctus elit sem, in cursus eros facilisis dignissim. Donec ut mi porttitor, auctor elit non, pretium elit. Nam urna augue, pretium id accumsan in, feugiat quis est. Donec tincidunt sapien non diam egestas facilisis. Integer lacus nulla, vestibulum feugiat euismod eget, feugiat id nunc. Duis semper sem euismod orci condimentum, vel consectetur nisl tincidunt. Curabitur varius, libero quis maximus auctor, odio felis gravida neque, in semper lacus metus et purus. Donec feugiat eu ipsum quis dignissim. Ut sem risus, venenatis eget magna eget, tincidunt vestibulum tellus. In interdum urna non convallis tristique. Vivamus molestie ut mauris ornare viverra. Aliquam efficitur quis felis vel posuere. 
         </p>
+       
         <form>
-            <label for="name">Name</label><br>
+            <label for="name"><strong>Name</strong></label><br>
             <input type="text" id ="name" name="name"><br><br>
-            <label for="email">Email</label><br>
+            <label for="email"><strong>Email</strong></label><br>
             <input type="email" id ="email" name="email"><br><br>
-            <label for="message">Message</label><br>
+            <label for="message"><strong>Message</strong></label><br>
             <textarea name="message" id="message" rows="3"></textarea><br><br>
             <button type="submit">Send</button>
         </form>
-       </section>
+       
+        </section>
     
     </body>
 </html>
